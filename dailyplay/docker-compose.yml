@@ -1,0 +1,10 @@
+version: "3"
+services:
+  example-mysql:
+    container_name: example
+    image: "mysql:5.6"
+    ports:
+      - "4306:3306"
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: 1
+      MYSQL_DATABASE: "example"
